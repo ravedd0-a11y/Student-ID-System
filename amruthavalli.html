@@ -13,6 +13,305 @@ padding:0;
 box-sizing:border-box;
 font-family:Arial,Helvetica,sans-serif;
 }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Verification</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,Helvetica,sans-serif;
+}
+
+body{
+
+background:#f2f4f8;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+min-height:100vh;
+
+}
+
+.card{
+
+width:900px;
+background:white;
+
+border-radius:15px;
+
+padding:35px;
+
+box-shadow:0px 10px 30px rgba(0,0,0,.2);
+
+}
+
+.header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+margin-bottom:30px;
+
+}
+
+.header img{
+
+height:120px;
+
+}
+
+.title{
+
+text-align:center;
+
+}
+
+.title h1{
+
+color:#8B0000;
+
+font-size:45px;
+
+}
+
+.title h2{
+
+color:#0b3d91;
+
+font-size:22px;
+
+}
+
+table{
+
+width:100%;
+
+font-size:22px;
+
+border-collapse:collapse;
+
+}
+
+td{
+
+padding:10px;
+
+}
+
+.label{
+
+font-weight:bold;
+
+width:240px;
+
+}
+
+.value{
+
+color:#333;
+
+}
+
+.verify{
+
+margin-top:30px;
+
+text-align:center;
+
+background:#28a745;
+
+color:white;
+
+padding:12px;
+
+border-radius:10px;
+
+font-size:22px;
+
+font-weight:bold;
+
+}
+
+@media(max-width:768px){
+
+.card{
+
+width:95%;
+
+padding:20px;
+
+}
+
+.header{
+
+flex-direction:column;
+
+}
+
+.header img{
+
+height:80px;
+
+margin:10px;
+
+}
+
+.title h1{
+
+font-size:32px;
+
+}
+
+table{
+
+font-size:18px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<div class="header">
+
+<img src="veltech.png">
+
+<div class="title">
+
+<h1>Vel Tech University</h1>
+
+<h2>Student Verification Portal</h2>
+
+</div>
+
+<img src="club.png">
+
+</div>
+
+<table>
+
+<tr>
+
+<td class="label">Full Name</td>
+
+<td id="name"></td>
+
+</tr>
+
+<tr>
+
+<td class="label">Date of Birth</td>
+
+<td id="dob"></td>
+
+</tr>
+
+<tr>
+
+<td class="label">Mobile Number</td>
+
+<td id="mobile"></td>
+
+</tr>
+
+<tr>
+
+<td class="label">Email ID</td>
+
+<td id="email"></td>
+
+</tr>
+
+<tr>
+
+<td class="label">VTU Number</td>
+
+<td id="vtu"></td>
+
+</tr>
+
+<tr>
+
+<td class="label">Register Number</td>
+
+<td id="register"></td>
+
+</tr>
+
+<tr>
+
+<td class="label">College Name</td>
+
+<td id="college"></td>
+
+</tr>
+
+</table>
+
+<div class="verify">
+
+✔ VERIFIED STUDENT
+
+</div>
+
+</div>
+
+<script>
+
+const student={
+
+name:"PANDILLAPALLI AMRUTHAVALLI",
+
+dob:"22/12/2006",
+
+mobile:"6303595656",
+
+email:"amruthavalli2206@gmail.com",
+
+vtu:"31013",
+
+register:"25UEAE0032",
+
+college:"Vel Tech Rangarajan Dr. Sagunthala R&D Institute of Science and Technology"
+
+};
+
+document.getElementById("name").innerHTML=student.name;
+
+document.getElementById("dob").innerHTML=student.dob;
+
+document.getElementById("mobile").innerHTML=student.mobile;
+
+document.getElementById("email").innerHTML=student.email;
+
+document.getElementById("vtu").innerHTML=student.vtu;
+
+document.getElementById("register").innerHTML=student.register;
+
+document.getElementById("college").innerHTML=student.college;
+
+</script>
+
+</body>
+</html>
 
 body{
 
